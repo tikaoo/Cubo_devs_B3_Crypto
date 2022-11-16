@@ -67,12 +67,7 @@ Dentro da pasta /tests localizada em /Back-end/modules existe um arquivo feito c
 
 #### Screenshots da aplicação
 
-![Tela de exibição do Ibovespa](https://i.imgur.com/kcdYjuP.png)
-  *Tela de exibição do Ibovespa do dia*
-
----  
-  
-![Tela de cotações de empresas](https://i.imgur.com/zJXACGj.png)
+![image](https://user-images.githubusercontent.com/94652044/202243694-b15f524e-4a28-4be7-b52f-e09f48ccdc39.png)
   
   
 ###### Considerações finais
