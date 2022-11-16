@@ -45,13 +45,9 @@ Para a camada de banco de dados foi utilizada a seguinte dependência:
 
 O projeto foi configurado para execução com Docker Compose. Contudo, é possível fazer a execução manualmente.
 
-### 1 Execução via Docker Compose
+### 1 Execução manual
 
-Para executar utilizando o Docker Compose, primeiramente, é necessário fazer a instalação do [Docker](https://docs.docker.com/), siga as instruções da documentação para instalar a versão mais apropriada da sua distro. Instalado o Docker, precisamos instalar o [Docker Compose](https://docs.docker.com/compose/install/) para gerenciar os 3 containers da aplicação. Após instalá-lo, basta executar o comando docker-compose up --build (**pode precisar de permissão de super usuário**) na pasta fonte do projeto, onde está localizado o arquivo docker-compose.yml e o processo de download/instalação de dependências se dará de forma automática. O processo de build total da aplicação pode levar em torno de 10 a 15 minutos, dependendo da máquina e conexão com a internet. Quando o Docker Compose completar o processo,a aplicação poderá ser acessada a partir de um navegador WEB acessando o endereço **http://localhost:4200**. Observação: certifique-se antes de executar o build da aplicação de que não há nenhuma processo rodando em uma das seguintes portas: **4200,5432,5000**, pois se houver, o comando docker-compose falhará. Dica: caso o endereço do postgreSQL esteja em execução, pare-o com o comando sudo service postgresql restart, caso aconteça o erro de 'endereço 0.0.0.0:5432 already in use' procure o **pid** do processo ouvindo essa porta com o comando sudo ss -nlp | grep 5432 e execute sudo kill -9 <**pid**>
-
-### 2 Execução manual
-
-+ 2.1 Configurando o Angular
++ 1.1 Configurando o Angular
   - Primeiro faça o download e instalação do [Angular-CLI](https://cli.angular.io/), caso ainda não o tenha instalado em sua máquina. Depois instale o [Node.js](https://nodejs.org/en/). Vá para a pasta /Front-end e execute o comando **npm-install**, que fará o download/instalação das dependências necessárias para subir a aplicação Angular. Execute então **ng serve** ainda na pasta /Front-end, assim a aplicação client será executada na porta 4200(porta padrão do Angular).
   
 ---
